@@ -1,5 +1,6 @@
 # Point inside polygon algorithm
 
+
 def point_in_polygon(lat, lon, polygon):
     # Check if a point is inside a polygon using the ray-casting algorithm
     n = len(polygon)
@@ -16,6 +17,7 @@ def point_in_polygon(lat, lon, polygon):
                         inside = not inside
         p1x, p1y = p2x, p2y
     return inside
+
 
 def find_polygons_for_coordinates(coordinates, regions):
     results = []
